@@ -1,17 +1,14 @@
 import "../styles/globals.css";
-import { FC, ReactElement, ReactNode } from "react";
+import { ReactElement } from "react";
 import { AppProps } from "next/dist/shared/lib/router/router";
-
-type NextPageWithLayout = {
-  getLayout?: (page: ReactElement) => ReactNode;
-};
+import { NextPageWithLayout } from "../src/interfaces";
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-  const getLayout = Component.getLayout ?? ((page) => page);
+  const getLayout = Component.getLayout ?? ((page: ReactElement) => page);
 
   return getLayout(<Component {...pageProps} />);
 }
