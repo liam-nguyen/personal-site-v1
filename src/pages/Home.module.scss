@@ -1,0 +1,17 @@
+.root {
+  @apply m-auto absolute grid grid-cols-4 gap-10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 90%;
+}
+
+.info1 {
+  @apply col-span-1 bg-red-200;
+}
+
+.info2 {
+  @apply col-span-3 bg-red-600;
+}

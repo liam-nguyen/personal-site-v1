@@ -1,13 +1,14 @@
 import { ReactElement } from "react";
 import { NextPageWithLayout } from "../src/interfaces";
 import { Layout } from "../src/layout";
+import Home from "../src/pages/Home";
 
-const Home: NextPageWithLayout = () => {
-  return <div></div>;
+const HomePage: NextPageWithLayout = () => {
+  return <Home />;
 };
 
-Home.getLayout = function getLayout(page: ReactElement) {
+HomePage.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 
-export default Home;
+export default HomePage;
