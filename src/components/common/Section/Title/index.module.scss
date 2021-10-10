@@ -1,0 +1,15 @@
+.root {
+  @apply font-extrabold w-max mb-7 pt-24 pb-12 pl-0;
+  font-size: 5.6rem;
+  line-height: 6.7rem;
+
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  font-size: 6.5rem;
+  line-height: 7.2rem;
+  padding: 58px 0 16px;
+}
