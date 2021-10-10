@@ -9,7 +9,7 @@ const Header = () => (
     <div className="col-span-1 row-span-1 flex flex-row align-middle">
       <Link href="/">
         <a className="flex items-center font-white">
-          <Image src="/logo.svg" height={40} width={40} alt="logo" />
+          {/* <Image src="/logo.svg" height={40} width={40} alt="logo" /> */}
           <p className="ml-1 mt-1 text-2xl">Liam Nguyen</p>
         </a>
       </Link>
