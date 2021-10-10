@@ -1,13 +1,9 @@
 import "../styles/globals.scss";
+import "../styles/base.scss";
 import { ReactElement } from "react";
-import { AppProps } from "next/dist/shared/lib/router/router";
-import { NextPageWithLayout } from "../src/interfaces";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
-
-type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout;
-};
+import { AppPropsWithLayout } from "src/types/pages";
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page: ReactElement) => page);
@@ -17,7 +13,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       <Head>
         <title>Liam Nguyen - Full Stack Developer</title>
       </Head>
-      <ThemeProvider>
+      <ThemeProvider defaultTheme="light" themes={["light", "dark"]}>
         <Component {...pageProps} />
       </ThemeProvider>
     </>
