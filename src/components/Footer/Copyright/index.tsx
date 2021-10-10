@@ -10,7 +10,7 @@ const Copyright = () => (
   <div className="flex flex-col w-full">
     <div className="flex align-baseline flex-wrap mr-auto">
       <p className="text-opacity-50 text-3xl leading-10 pt-6">
-        <span>&copy; 2021</span>
+        <span>&copy; 2021 |</span>
         <SelfLink />
         <span>| All right reserved.</span>
       </p>

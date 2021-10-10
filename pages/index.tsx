@@ -1,8 +1,8 @@
-import { NextPageWithLayout } from "../src/interfaces";
-import { getLayout } from "../src/layout/SiteLayout";
+import { NextPageWithLayout } from "src/types/pages";
+import { getLayout } from "../src/layout/ContentLayout";
 
 const HomePage: NextPageWithLayout = () => {
-  return <div></div>;
+  return <div className="bg-blue-500"></div>;
 };
 
 HomePage.getLayout = getLayout;

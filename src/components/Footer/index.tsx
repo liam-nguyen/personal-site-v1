@@ -40,8 +40,10 @@ const Footer = () => (
         }}
       />
     </CommunicationGrid>
-    <Copyright />
-    <SocialIcons />
+    <div className="flex flex-row justify-between">
+      <Copyright />
+      <SocialIcons />
+    </div>
   </section>
 );
 

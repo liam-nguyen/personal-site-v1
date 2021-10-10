@@ -8,13 +8,13 @@ import { AppPropsWithLayout } from "src/types/pages";
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page: ReactElement) => page);
 
-  return getLayout(
+  return (
     <>
       <Head>
         <title>Liam Nguyen - Full Stack Developer</title>
       </Head>
       <ThemeProvider defaultTheme="light" themes={["light", "dark"]}>
-        <Component {...pageProps} />
+        {getLayout(<Component {...pageProps} />)}
       </ThemeProvider>
     </>
   );

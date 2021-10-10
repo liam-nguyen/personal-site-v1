@@ -1,3 +1,7 @@
+const colors = {
+  "liam-blue": "rgb(15,22,36)",
+};
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -5,6 +9,12 @@ module.exports = {
     extend: {
       borderRadius: {
         "6xl": "3rem",
+      },
+      backgroundColor: {
+        ...colors,
+      },
+      textColor: {
+        ...colors,
       },
     },
   },
