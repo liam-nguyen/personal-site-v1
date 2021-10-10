@@ -1,7 +1,7 @@
-import Container from "@components/Container";
+import Container from "@components/common/Container";
 import Link from "next/link";
 import Image from "next/image";
-import { NavLink } from "@components/Nav";
+import { NavLink } from "@components/common/Nav";
 import { SocialIcons } from "@components/common";
 
 const Header = () => (

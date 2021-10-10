@@ -1,4 +1,4 @@
-import Icon from "@components/Icon";
+import Icon from "@components/common/Icon";
 import { FC } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import cn from "classnames";

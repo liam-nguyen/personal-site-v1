@@ -16,6 +16,9 @@ module.exports = {
       textColor: {
         ...colors,
       },
+      lineHeight: {
+        16: "4rem",
+      },
     },
   },
   variants: {

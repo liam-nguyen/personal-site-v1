@@ -1,4 +1,4 @@
-export { default as Container } from "./Container";
-export { default as Header } from "./Header";
-export { default as Footer } from "./Footer";
-export * from "./Nav";
+export { default as Container } from "./common/Container";
+export { default as Header } from "./common/Header";
+export { default as Footer } from "./common/Footer";
+export * from "./common/Nav";
