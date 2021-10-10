@@ -2,8 +2,7 @@ import Container from "@components/Container";
 import Link from "next/link";
 import Image from "next/image";
 import { NavLink } from "@components/Nav";
-import Icon from "@components/Icon";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SocialIcons } from "@components/common";
 
 const Header = () => (
   <Container className="grid grid-cols-5 grid-row-1 gap-8 p-4 pt-8">
@@ -28,14 +27,7 @@ const Header = () => (
         </li>
       </ul>
     </div>
-    <div className="col-span-1 row-span-1 mt-4 flex flex-row space-x-10">
-      <Icon link={"https://github.com/liam-nguyen"}>
-        <FaGithub size="2rem" />
-      </Icon>
-      <Icon link={"https://github.com/liam-nguyen"}>
-        <FaLinkedin size="2rem" />
-      </Icon>
-    </div>
+    <SocialIcons className="col-span-1 row-span-1 mt-4" />
   </Container>
 );
 
