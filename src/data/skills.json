@@ -1,0 +1,30 @@
+ {
+    "skills": [
+        {
+            "title": "Next JS",
+            "description": "Framework that I'm currently using to develop ecommerce application"
+        },
+        {
+            "title": "Typescript",
+            "description":
+                "The best invention ever for Javascript. I have been an strong advocate of it both at work and personal use."
+        },
+        {
+            "title": "React",
+            "description": "I have been an active React developer since college and at works."
+        },
+        {
+            "title": "Java",
+            "description": "My first language and still using it for personal use."
+        },
+        {
+            "title": "Python",
+            "description":
+                "Another favorite language of mine. Used for previous job and data science/machine learning projects"
+        },
+        {
+            "title": "Git",
+            "description": "A tool that I can't live without, ever!"
+        }
+    ]
+}
