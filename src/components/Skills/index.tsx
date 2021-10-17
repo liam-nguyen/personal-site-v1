@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { TSkill, TSkills } from 'src/types/api/skill';
-import { SectionText } from '../Section/Text';
-import { SectionTitle } from '../Section/Title';
+import { TSkill } from 'src/types/api/skill';
+import { SectionText } from '../common/Section/Text';
+import { SectionTitle } from '../common/Section/Title';
 import { SkillCard } from './SkillCard';
 
 export const Skills: FC<{ skills: TSkill[] }> = ({ skills }) => (

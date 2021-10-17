@@ -1,6 +1,6 @@
 import { getLayout } from '../src/layouts/ContentLayout';
 import { Hero } from '@components/common';
-import { Skills } from '@components/common/Skills';
+import { Skills } from '@components/Skills';
 import { Divider } from '@components/common/Divider';
 import { TSkill } from 'src/types/api/skill';
 import data from '@data/skills.json';
